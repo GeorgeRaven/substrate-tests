@@ -64,6 +64,12 @@ git = 'https://github.com/paritytech/substrate.git'
 tag = 'v2.0.0-rc6'
 version = '2.0.0-rc6'
 
+[dependencies.pallet-contracts-rpc-runtime-api]
+default-features = false
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'v2.0.0-rc6'
+version = '0.8.0-rc6'
+
 [dependencies.pallet-grandpa]
 default-features = false
 git = 'https://github.com/paritytech/substrate.git'
@@ -189,6 +195,7 @@ std = [
     'pallet-balances/std',
     'pallet-contracts/std',
     'pallet-contracts-primitives/std',
+    'pallet-contracts-rpc-runtime-api/std',
     'pallet-grandpa/std',
     'pallet-randomness-collective-flip/std',
     'pallet-sudo/std',
